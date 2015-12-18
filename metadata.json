@@ -1,0 +1,17 @@
+{
+  "name": "puppet-openstack_cloud",
+  "version": "0.1.0",
+  "author": "Harish Kumar<hkumar@d4devops.org>",
+  "summary": "Puppet code to build openstack based cloud system",
+  "license": "Apache 2.0",
+  "source": "github.com/hkumarmk/puppet-openstack_cloud",
+  "project_page": "https://github.com/hkumarmk/puppet-openstack_cloud",
+  "issues_url": "https://github.com/hkumarmk/puppet-openstack_cloud/issues",
+  "dependencies": [
+    {
+      "name": "puppetlabs-stdlib",
+      "version_range": ">= 1.0.0"
+    }
+  ]
+}
+
