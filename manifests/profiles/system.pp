@@ -2,14 +2,16 @@
 ## Purpose: to group all system level configuration together.
 
 class openstack_cloud::profiles::system(
-  $security_banner  = undef,
+  $security_banner = undef,
+  $manage_timezone = true,
 ) {
 
   ##
   # Set timezone
   ##
-
-  contain ::timezone
+  if $manage_timezone {
+    contain ::timezone
+  }
 
   ##
   ## Added security banner messages
