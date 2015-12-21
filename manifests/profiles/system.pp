@@ -5,7 +5,15 @@ class openstack_cloud::profiles::system(
   $security_banner = undef,
   $manage_timezone = true,
   $manage_ntp      = true,
+  $manage_repo     = true,
 ) {
+
+  ##
+  # Setup package repos
+  ##
+  if $manage_repo {
+    contain openstack_cloud::profiles::system::repo
+  }
 
   ##
   # Set timezone

@@ -9,8 +9,10 @@
   "issues_url": "https://github.com/hkumarmk/puppet-openstack_cloud/issues",
   "dependencies": [
     {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"},
-    {"name":"saz/puppet-timezone","version_requirement":">= v2.0.0"}
-
+    {"name":"saz/puppet-timezone","version_requirement":">= v2.0.0"},
+    {"puppetlabs/apt":"puppetlabs/puppetlabs-apt","version_requirement":">=1.6.0"},
+    {"puppetlabs/ntp":"puppetlabs/puppetlabs-ntp","version_requirement":">=3.0.1"},
+    {"stephenrjohnson/puppet":"stephenrjohnson/puppetmodule"}
   ]
 }
 
