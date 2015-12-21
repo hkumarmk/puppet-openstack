@@ -8,3 +8,7 @@ mod 'puppetlabs/stdlib',
 mod 'saz/timezone',
   :git => "#{base_url}/saz/puppet-timezone",
   :ref => 'v3.3.0'
+
+mod 'puppetlabs/ntp',
+  :git => "#{base_url}/puppetlabs/puppetlabs-ntp",
+  :ref => '3.3.0'

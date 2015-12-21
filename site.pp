@@ -10,5 +10,5 @@ File {
 }
 
 node default {
-  include role::base
+  include openstack_cloud::roles::base
 }

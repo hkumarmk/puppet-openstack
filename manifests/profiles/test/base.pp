@@ -11,6 +11,4 @@ class openstack_cloud::profiles::test::base {
     ensure => directory,
   }
 
-  openstack_cloud::profiles::test {'test_timezone.sh':}
-
 }
