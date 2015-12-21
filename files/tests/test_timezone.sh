@@ -20,7 +20,7 @@ __EOH__
 fi
 
 timezone=${timezone:-'UTC'}
-current_tz=`date %Z`
+current_tz=`date +%Z`
 if [ `echo $current_tz | grep -c $timezone` -ne 0 ]; then
   echo "OK: timezone is set to $timezone"
   exit 0
